@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="scroll-smooth scroll-p-5">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be0be6d488.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="bg-teal-900 px-3 lg:px-10 py-3">
+    <div class="navbar flex justify-between items-center">
+      <a href="#"><img src="./images/logo.png" alt="logo" class="w-60"></a>
+      <div class="nav-items hidden lg:flex gap-8 justify-center items-center">
+        <a class="text-white" href="#home">Home</a>
+        <a class="text-white" href="#pooja">पूजा सामग्री</a>
+        <a class="text-white" href="#panditji">पंडित जी</a>
+        <a class="text-white" href="#rashi">रशि</a>
+        <a class="text-white" href="#panditji">संपर्क करे</a>
+      </div>
+      <div class="nav-btn hidden lg:block">
+        <button
+          class="flex justify-between items-center gap-2 border-2 px-5 py-2 text-white hover:text-orange-500 bg-orange-500 rounded-lg border-orange-500 hover:bg-slate-200">
+          <a href="tel:9718747178"><i class="fa-solid fa-phone"></i>
+          <span>पंडित जी से संपर्क करे</span></a>
+        </button>
+      </div>
+      <div class="mobile-nav--icon lg:hidden p-2">
+        <i class="fa-solid fa-bars text-4xl text-white" onclick="openNav()"></i>
+      </div>
+    </div>
+    <div id="nav-dialog" class="hidden lg:hidden z-10 fixed inset-0 bg-teal-700 p-2">
+      <div class="top-mobile-nav flex justify-between items-center">
+        <a href="#"><img src="./images/logo.png" alt="logo" class="w-60"></a>
+        <div class="mobile-nav--icon lg:hidden p-2">
+          <i class="fa-solid fa-xmark text-4xl text-white" onclick="openNav()"></i>
+        </div>
+      </div>
+      <div class="mobile-nav-item p-2 mt-4">
+        <div class="list-mobile-items pb-4">
+          <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#home" onclick="openNav()">Home</a>
+          <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#pooja" onclick="openNav()">पूजा सामग्री</a>
+          <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#panditji" onclick="openNav()">पंडित जी</a>
+          <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#rashi" onclick="openNav()">रशि</a>
+          <a class="block p-2 bg-slate-200 rounded-lg" href="#panditji" onclick="openNav()">संपर्क करे</a>
+        </div>
+        <div class="nav-btn mt-2">
+          <button
+            class="flex justify-center items-center w-full gap-2 border-2 px-5 py-2 bg-orange-500 rounded-lg border-orange-500 text-white hover:bg-teal-950">
+            <a href="tel:9718747178" onclick="openNav()"><i class="fa-solid fa-phone"></i>
+              <span>पंडित जी से संपर्क करे</span></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-content bg-teal-950 pb-5 px-3 lg:px-10 text-white">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 gap-x-4 text-white py-5 text-left mb-5" id="home">
+        <div class="banner-text col-span-12 md:col-span-6">
+          <h1 class="text-5xl mb-7 text-orange-600">ओम नमो भगवते वासुदेवाय</h1>
+          <p class="text-lg mb-3">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्‌ ॥</p>
+          <p class="text-center mb-3 text-2xl text-orange-600">अर्थ</p>
+          <p>हे भारत! जब-जब धर्म की हानि और अधर्म की वृद्धि होती है, तब-तब ही मैं अपने रूप को रचता हूँ अर्थात साकार रूप से लोगों के सम्मुख प्रकट होता हूँ॥</p>
+          <button
+            class="bg-orange-500 border-orange-500 border-2 text-white px-8 py-3 mt-5 mb-10 rounded-lg shadow-md hover:shadow-lg"><a href="tel:"><i class="fa-solid fa-phone"></i>
+              <span>पंडित जी से संपर्क करे</span></a></button>
+        </div>
+        <div class="banner-image col-span-12 md:col-span-6">
+          <img src="./images/pooja.jpg" alt="pooja" class="w-full rounded-xl border-teal-900 border-2">
+        </div>
+      </div>
+      <div class="book-popular-event py-6 text-center" id="pooja">
+        <h3 class="text-5xl text-white pb-3">पूजा सामग्री यहां देखें</h3>
+        <!-- <p class="text-md text-white">Check out the most in-demand events for your easy reference to book our services
+          today!</p> -->
+      </div>
+      <div class="cards-events pb-5">
+        <div class="grid grid-cols-12 gap-4 text-center">
+          <div class="col-span-12 lg:col-span-3">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-2"
+                  src="./images/vishnu.png" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">सत्य नारायण पूजा सामग्री</h3>
+              <p class="text-sm mb-7">ओम नमो भगवते वासुदेवाय</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg border-2 border-white animate-pulse" href="#">सामग्री देखें</a>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-2"
+                  src="./images/mundan.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">नामकरण सामग्री</h3>
+              <p class="text-sm mb-7">ओम नमो भगवते वासुदेवाय</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg border-2 border-white animate-pulse" href="#">सामग्री देखें</a>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-2"
+                  src="./images/Wedding.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">दुल्हन पक्ष की पूजा सामग्री</h3>
+              <p class="text-sm mb-7">ओम नमो भगवते वासुदेवाय</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg border-2 border-white animate-pulse" href="#">सामग्री देखें</a>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-3">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-2"
+                  src="./images/Wedding.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">दूल्हे पक्ष की पूजा सामग्री</h3>
+              <p class="text-sm mb-7">ओम नमो भगवते वासुदेवाय</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg border-2 border-white animate-pulse" href="#">सामग्री देखें</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rashi-card mb-5 mt-5">
+        <h3 class="text-5xl text-white pb-3 text-center mt-10 mb-4" id="rashi">राशियाँ</h3>
+        <div class="cards-events py-2">
+          <div class="grid grid-cols-12 gap-4 text-center">
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/aries.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">मेष</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/taurus.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">वृष</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/gimini.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">मिथुन</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/cancer.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">कर्क</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/leo.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">सिंह</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/virgo.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">कन्या</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 gap-4 text-center mt-4">
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/libra.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">तुला</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/scrorpio.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">वृश्चिक</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/sagittairus.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">धनु</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/capricorn.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">मकर</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/aquarius.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3 text-orange-500">कुंभ</h3>
+              </div>
+            </div>
+            <div class="col-span-full max-sm:col-span-6 max-md:col-span-4 md:col-span-4 lg:col-span-2">
+              <div class="card-event-box h-full bg-black p-2 rounded-lg py-5 drop-shadow-md hover:drop-shadow-lg">
+                <div class="flex justify-center items-center">
+                  <video class="w-fit h-fit" controls="false" autoplay muted>
+                    <source src="./images/pisces.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="text-2xl mb-3">मीन</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-popular-event py-6 text-center">
+        <h3 class="text-5xl text-white pb-3" id="panditji">पंडित जी</h3>
+        <!-- <p class="text-md text-white">Check out the most in-demand events for your easy reference to book our services
+          today!</p> -->
+      </div>
+      <div class="cards-events pb-5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 content-center text-center">
+          <div class="hidden">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-2"
+                  src="./images/vishnu.png" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">सत्य नारायण पूजा सामग्री</h3>
+              <p class="text-sm mb-3">ओम नमो भगवते वासुदेवाय</p>
+              <a class="text-lg text-orange-500" href="#">सामग्री देखें</a>
+            </div>
+          </div>
+          <div class="">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-4"
+                  src="./images/acharya.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">पंडित श्री दुर्गा दत्त भट्ट जी</h3>
+              <p class="text-sm mb-5">स्थान:- लोधी रोड, दिल्ली</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg" href="tel:9818139268">संपर्क करे</a>
+            </div>
+          </div>
+          <div class="">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-4"
+                  src="./images/acharya.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">पंडित श्री जय दत्त भट्ट जी</h3>
+              <p class="text-sm mb-5">स्थान:- संगम विहार, दिल्ली</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg" href="tel:9911102160">संपर्क करे</a>
+            </div>
+          </div>
+          <div class="">
+            <div class="card-event-box h-full bg-teal-900 p-2 rounded-lg py-16 drop-shadow-md hover:drop-shadow-lg">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-24 h-24 border-2 rounded-full border-orange-500 text-orange-500 hover:border-stone-400 pt-4 pl-1 pr-1 pb-1 mb-4"
+                  src="./images/acharya.svg" alt="">
+              </div>
+              <h3 class="text-2xl mb-3">पंडित श्री ललित प्रसाद भट्ट जी</h3>
+              <p class="text-sm mb-5">स्थान:- संगम विहार, दिल्ली</p>
+              <a class="bg-orange-600 text-lg text-white px-10 py-2 rounded-lg" href="tel:9718747178">संपर्क करे</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-event-box py-6 text-center lg:px-16 hidden">
+        <h3 class="text-3xl text-white pb-3">Book An Event</h3>
+        <p class="text-md text-white">Find professional purohits, cooks, catering service for any religious function or a
+          traditional event at your home,
+          office or an event venue. Select a date and event to learn more</p>
+      </div>
+        <div class="bg-teal-900 px-10 py-10 rounded-lg mb-5 hidden">
+          <div class="form-box">
+            <form action="">
+              <div class="lg:flex block justify-between items-end flex-wrap gap-4">
+                <div class="flex justify-center flex-col gap-2 max-sm:w-full max-lg:pt-7">
+                  <label for="">Name</label>
+                  <input class="bg-teal-700 focus:outline-none opacity-50 border-2 border-teal-700 rounded-lg text-white py-3 px-4 placeholder-white" type="name" name="Name" placeholder="Enter your Name">
+                </div>
+                <div class="flex justify-center flex-col gap- max-sm:w-full max-lg:pt-7">
+                  <label for="">Date</label>
+                  <input class="bg-teal-700 focus:outline-none opacity-50 border-2 border-teal-700 rounded-lg text-white py-3 px-4 placeholder-white" type="name" name="Date" placeholder="Enter Date">
+                </div>
+                <div class="flex justify-center flex-col gap-2 max-sm:w-full max-lg:pt-7">
+                  <label for="">Event</label>
+                  <input class="bg-teal-700 focus:outline-none opacity-50 border-2 border-teal-700 rounded-lg text-white py-3 px-4 placeholder-white" type="name" name="Event" placeholder="Enter Event">
+                </div>
+                <div class="flex justify-center flex-col gap-2 max-sm:w-full max-sm:mt-4 max-lg:pt-10">
+                  <button class="bg-orange-500 py-3 rounded-lg px-20 hover:bg-slate-200 hover:text-orange-500 border-orange-500 border-2 w-full" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="">
+    
+  </div>
+  <div class="bg-img relative">
+    <div class="container-full">
+      <div class="box-img">
+        <!-- <img class="h-full w-full object-cover object-center" src="./images/chakra.mp4" alt="slider"> -->
+        <video class="w-fit h-fit" controls="false" autoplay muted>
+          <source src="./images/chakra.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-teal-900 px-3 py-5">
+    <div class="lg:flex justify-center items-start flex-wrap block gap-8">
+      <div class="foot-logo pt-4">
+        <img src="./images/logo.png" alt="footer-logo" class="w-60">
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
