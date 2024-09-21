@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="scroll-smooth scroll-p-5">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be0be6d488.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-yellow-900 px-3 lg:px-10 py-3">
+        <div class="navbar flex justify-between items-center">
+          <a href="index.html"><img src="./images/logo.png" alt="logo" class="w-60"></a>
+          <div class="nav-items hidden lg:flex gap-8 justify-center items-center">
+            <a class="text-white" href="index.html">Home</a>
+            <a class="text-white" href="#pooja">पूजा सामग्री</a>
+            <a class="text-white" href="#panditji">पंडित जी</a>
+            <a class="text-white" href="#rashi">राशि</a>
+            <a class="text-white" href="#panditji">संपर्क करे</a>
+          </div>
+          <div class="nav-btn hidden lg:block">
+            <button
+              class="flex justify-between items-center gap-2 border-2 px-5 py-2 text-orange-950 hover:text-white bg-yellow-500 rounded-lg border-yellow-500 hover:bg-yellow-500">
+              <a href="#panditji"><i class="fa-solid fa-phone"></i>
+              <span>पंडित जी से संपर्क करे</span></a>
+            </button>
+          </div>
+          <div class="mobile-nav--icon lg:hidden p-2">
+            <i class="fa-solid fa-bars text-4xl text-white" onclick="openNav()"></i>
+          </div>
+        </div>
+        <div id="nav-dialog" class="hidden lg:hidden z-10 fixed inset-0 bg-yellow-700 p-2">
+          <div class="top-mobile-nav flex justify-between items-center">
+            <a href="index.html"><img src="./images/logo.png" alt="logo" class="w-60"></a>
+            <div class="mobile-nav--icon lg:hidden p-2">
+              <i class="fa-solid fa-xmark text-4xl text-white" onclick="openNav()"></i>
+            </div>
+          </div>
+          <div class="mobile-nav-item p-2 mt-4">
+            <div class="list-mobile-items pb-4">
+              <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="index.html/#home" onclick="openNav()">Home</a>
+              <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#pooja" onclick="openNav()">पूजा सामग्री</a>
+              <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#panditji" onclick="openNav()">पंडित जी</a>
+              <a class="block p-2 bg-slate-200 mb-2 rounded-lg" href="#rashi" onclick="openNav()">राशि</a>
+              <a class="block p-2 bg-slate-200 rounded-lg" href="#panditji" onclick="openNav()">संपर्क करे</a>
+            </div>
+            <div class="nav-btn mt-2">
+              <button
+                class="flex justify-center items-center w-full gap-2 border-2 px-5 py-2 bg-yellow-500 rounded-lg border-yellow-500 text-orange-950 hover:bg-yellow-500">
+                <a href="#panditji" onclick="openNav()"><i class="fa-solid fa-phone"></i>
+                  <span>पंडित जी से संपर्क करे</span></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+   <div class="main-content bg-yellow-950 pb-5 px-3 lg:px-10 text-white py-5">
+    <h1 class="text-5xl mb-2 text-yellow-300 mx-auto w-100 text-center">ओम नमो भगवते वासुदेवाय नमः</h1>
+    <div class="samgri-card min-h-80 w-75 mx-auto">
+        <img class="w-20 mx-auto" src="./images/ganesh.png" width="100px">
+        <h2 class="text-2xl text-center py-2 border-b-1 border-white">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</h2>
+        <div class="bg-yellow-900 drop-shadow-lg border-1 w-full rounded-lg shadow-lg h-full md:px-7 px-2 py-5 mt-5">
+            <h2 class="text-2xl md:text-3xl text-white py-5 text-left mb-5">सत्य नारायण व्रत कथा पूजा सामग्री</h2>
+            <ul class="list-decimal grid grid-cols-2 md:grid-cols-3 gap-5 px-4">
+                <li>रोली = 1 पैकेट</li>
+                <li>मोली = 1 गोला</li>
+                <li>दूध=1\2gm</li>
+                <li>दही= 100gm</li>
+                <li>शहद= 100gm</li>
+                <li>शक्कर =100gm</li>
+                <li>घी 1/2 kg </li>
+                <li>चावल  =100gm</li>
+                <li>जानेऊ =5</li>
+                <li>फूल माला  =4</li>
+                <li>दूब (हरी घास)</li> 
+                <li>धूप </li>
+                <li>कपूर= 5 piece</li>
+                <li>पंचमेवा =200gm </li>
+                <li>मिष्ठान </li>
+                <li> फल</li>
+                <li>आम के पत्ते</li>
+                <li>पान के पेते =5</li>
+                <li>लौंग </li>
+                <li>इलायची</li> 
+                <li>सुपारी =7</li>
+                <li>जाटा नारियल =1</li>
+                <li>गोला =1</li> 
+                <li>समिधा- लकड़ी = 1 kg</li>
+                <li>नवग्रह समिधा</li> 
+                <li>हवन सामग्री 200gm</li>
+                <li>जौ तिल 25gm </li>
+                <li>डोने =1 पैकेट</li>
+                <li>दिया=1</li>  
+                <li>रुई </li>
+                <li>माचिस-1</li>
+                <li>तुलसी पत्ता</li> 
+                <li>केले के पत्ते</li>
+                <li>पीला कपड़ा = सवा मीटर</li>
+                <li>लाल कपड़ा = आधा मीटर</li>
+                <li>काली मिर्च =10gm</li>
+                <li>पीली सरसों =10gm</li>
+                <li>पीला चंदन</li>
+            </ul>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
